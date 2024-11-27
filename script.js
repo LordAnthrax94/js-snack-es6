@@ -98,10 +98,22 @@ squads.forEach(squad => {
 
 const datiSquad = [];
 
-for(let x in squads.name){
-  console.log(`chiave ${chiave[chiave]}, valore:${squads[chiave]}`);
+// const array = [{a: 1}, {a: 2}]
+// for (const item of array ) {
+// console.log(item.a)
+// }
+
+for(let key of squads){
+  datiSquad.push({
+    nome: key.name,
+    falliSubiti: key.falliSubiti
+  }) 
+
+   
   
 }
+
+console.log(datiSquad);
 
 
 
