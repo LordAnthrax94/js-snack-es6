@@ -4,6 +4,47 @@
 // Stampare a schermo la bici con peso minore.
 
 
+const bike = [
+  {
+  name: 'mountainbike',
+  weight: 11
+  },
+  {
+    name: 'graziella',
+    weight: 10
+  },
+  {
+    name: 'atala',
+    weight: 7 
+  },
+  {
+    name: 'bianchi',
+    weight: 8
+  },
+  {
+    name: 'garelli',
+    weight: 9
+  }
+]
+
+let lighterbike = bike[0];
+
+console.log(lighterbike);
+
+
+for (let i = 0; i < bike.length; i++){
+  const singlebike = bike[i]
+  if(singlebike.weight < lighterbike.weight){
+    lighterbike = singlebike;
+  }
+
+  
+  
+}
+
+console.log(`La bici più leggera è ${lighterbike.name}`);
+
+document.getElementById('bicileggera').innerHTML = `La bici più leggera è ${lighterbike.name}`;
 
 
 
