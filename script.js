@@ -96,7 +96,7 @@ squads.forEach(squad => {
 
 const datiSquad = [];
 
-fot(let punti in squads){
+for(let x in squads.name){
   console.log(`chiave ${chiave[chiave]}, valore:${squads[chiave]}`);
   
 }
