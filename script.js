@@ -121,3 +121,22 @@ console.log(datiSquad);
 // Snack 3 (Bonus)
 // Scrivere una funzione che accetti tre argomenti, un array e due numeri (a più piccolo di b).
 // La funzione ritornerà un nuovo array con i valori che hanno la posizione compresa tra i due numeri.
+
+
+const animali = ['oca', 'cane', 'gatto', 'lupo', 'pecora'];
+
+const min = 1;
+const max = 4;
+
+console.log(animali);
+
+
+const posnum = [];
+
+function posizione(array, num1, num2){
+  return  array.slice(min,max)
+}
+
+posizione(animali, min, max)
+
+console.log(posizione(animali, min, max));
