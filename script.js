@@ -55,6 +55,51 @@ document.getElementById('bicileggera').innerHTML = `La bici più leggera è ${li
 // Generare numeri random al posto degli 0 nelle proprietà “punti” fatti e “falli subiti”.
 // Infine, creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
 
+const squads = [
+  {
+    name:  'Lecce',
+    punti: 0,
+    falliSubiti: 0
+  },
+  {
+    name: 'Bari',
+    punti: 0,
+    falliSubiti: 0
+  },
+  {
+    name: 'Roma',
+    punti: 0,
+    falliSubiti: 0
+  },
+  {
+    name: 'Juventus',
+    punti: 0,
+    falliSubiti: 0
+  },
+  {
+    name: 'Inter',
+    punti: 0,
+    falliSubiti: 0
+  }
+]
+
+
+
+function valoriArray(max, min){
+  return Math.floor(Math.random(max - min + 1) + min)
+}
+
+squads.forEach(squad => {
+  squad.punti = valoriArray(30, 1)
+  squad.falliSubiti = valoriArray(10, 2)
+}) 
+
+const datiSquad = [];
+
+fot(let punti in squads){
+  console.log(`chiave ${chiave[chiave]}, valore:${squads[chiave]}`);
+  
+}
 
 
 
